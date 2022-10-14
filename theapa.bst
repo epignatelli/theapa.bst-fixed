@@ -518,7 +518,7 @@ FUNCTION {format.pages}
 FUNCTION {format.vol.num.pages}
 { number empty$
     { volume empty$
-       'skip$
+       { " " }
        { "{\Bem " volume * "}" * }
       if$
     }
